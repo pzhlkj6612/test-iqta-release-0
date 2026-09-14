@@ -36,7 +36,6 @@ on:
           The repository may have branch protection rules (branch ruleset), so a PAT that can
           bypass corresponding protection is required.
           Check comments in the workflow file for details.
-        required: true
         type: boolean
         default: false
 
