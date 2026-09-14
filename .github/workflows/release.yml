@@ -209,7 +209,8 @@ jobs:
           # "secrets.GITHUB_TOKEN" can be used here if no protection rule applied. Read:
           # - [Feature Request] Allow github actions to bypass branch protection rules in certain specific circumstances
           #   https://github.com/orgs/community/discussions/13836
-          GH_TOKEN: ${{ secrets.IQTA_RELEASE_PAT }}
+          # GH_TOKEN: ${{ secrets.IQTA_RELEASE_PAT }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
           GH_REPO: ${{ github.repository }}
         run: |
