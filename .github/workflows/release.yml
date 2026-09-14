@@ -27,6 +27,8 @@ on:
         # Don't forget to add "Write (Roles)" into the "Bypass list" of corresponding rulesets.
         # Adding "Write (Roles)" will essentially disable the safety net in response to human's
         # error, so it's recommended to remove the bypass item after a successful release ASAP.
+        # It's also recommended to invalidate the PAT after creating a successful release.
+        # 
         # "secrets.GITHUB_TOKEN" can be used here if no protection rule applied. Read:
         # - [Feature Request] Allow github actions to bypass branch protection rules in certain specific circumstances
         #   https://github.com/orgs/community/discussions/13836
